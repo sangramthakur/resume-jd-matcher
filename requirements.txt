@@ -5,3 +5,5 @@ pdfplumber
 spacy
 pandas
 scikit-learn
+spacy
+en-core-web-sm
