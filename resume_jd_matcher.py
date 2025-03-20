@@ -69,18 +69,19 @@ def evaluate_extraction(predicted, actual):
 st.title("📄 Resume vs JD Skill Matcher")
 st.write("Upload your Resume & Job Description PDFs or copy-paste the JD text.")
 
-# File Upload for Resume
+# File Upload for Resume OR Copy-Paste Resume
 resume_file = st.file_uploader("Upload Resume (PDF)", type="pdf")
+resume_text_input = st.text_area("Or, Copy-Paste Resume Here", height=200)
 
 # File Upload for JD OR Copy-Paste JD
 jd_file = st.file_uploader("Upload Job Description (PDF)", type="pdf")
 jd_text_input = st.text_area("Or, Copy-Paste JD Here", height=200)
 
-if resume_file and (jd_file or jd_text_input):
-    # Extract text from Resume PDF
-    resume_text = extract_text_from_pdf(resume_file)
+if (resume_file or resume_text_input) and (jd_file or jd_text_input):
+    # Extract text from Resume PDF or use pasted text
+    resume_text = extract_text_from_pdf(resume_file) if resume_file else resume_text_input.strip()
 
-    # Extract text from JD (either from file or text area)
+    # Extract text from JD PDF or use pasted text
     jd_text = extract_text_from_pdf(jd_file) if jd_file else jd_text_input.strip()
 
     # Extract entities from Resume
