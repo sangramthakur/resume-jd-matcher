@@ -18,7 +18,15 @@ custom_stopwords = set([
 ])
 
 # Important words that should NOT be removed
-keep_words = {"F&O", "CMO", "AI", "ML", "BI", "NLP", "LSTM", "GAN", "IoT", "SQL", "RAG", "LLM"}
+keep_words = {"F&O", "CMO", "AI", "ML", "BI", "NLP", "LSTM", "GAN", "IoT", "SQL", "RAG", "LLM"
+             "RAG", "LLM", "KPI", "ROI", "OKR", "API", "SDK", "CDN", "SaaS", "PaaS",
+                "IaaS", "ETL", "CI/CD", "QA", "UX", "UI", "DevOps", "Docker", "K8s", 
+                "AWS", "Azure", "GCP", "HTML", "CSS", "JS", "JSON", "XML", "REST", "SOAP",
+                "DBMS", "SQL", "NoSQL", "ETL", "CRM", "ERP", "SEO", "SEM", "PMO", "POC",
+                "MVP", "B2B", "B2C", "PMP", "RPA", "AIOps", "QA/QC", "TDD", "BDD", "CI",
+                "CD", "Ops", "SRE", "Tech Lead", "API Gateway", "GraphQL", "OAuth", "JWT",
+                "Spark", "Hadoop", "Kafka", "ELT", "EDA", "CMS", "DevSecOps", "FP&A", "IoC"
+             }
 
 # Extract text from PDF
 def extract_text_from_pdf(pdf_file):
