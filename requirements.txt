@@ -1,0 +1,7 @@
+# resume-jd-matcher
+
+streamlit
+pdfplumber
+spacy
+pandas
+scikit-learn
