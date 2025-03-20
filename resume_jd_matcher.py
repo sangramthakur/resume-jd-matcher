@@ -30,7 +30,7 @@ custom_stopwords = set([
 keep_words = {
     "F&O", "CMO", "AI", "ML", "BI", "NLP", "LSTM", "GAN", "IoT", "SQL", "RAG", "LLM",
     "KPI", "ROI", "OKR", "API", "SDK", "CDN", "SaaS", "PaaS", "IaaS", "ETL", "CI/CD",
-    "Docker", "AWS", "Azure", "GCP", "REST", "DBMS", "NoSQL", "CRM", "ERP", PMP, PgMP, CISSP, CISA, CISM
+    "Docker", "AWS", "Azure", "GCP", "REST", "DBMS", "NoSQL", "CRM", "ERP", "PMP", "PgMP", "CISSP", "CISA", "CISM"
 }
 
 # Function to extract text using Apache Tika
